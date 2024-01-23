@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
-        <title>Balises de text et CSS</title>
+    
+        
         <meta name="description" content="Ma seconde page en HTML">
 
         <!-- 
@@ -14,7 +16,43 @@
             Elle peut etre utilisée pour indiquer qui a crée le contenu de la page.
 
          -->
-    
+<style>
+    /* style dans la balise head */
+        body {
+                background-color: #ff3366;
+
+        }
+        h1
+        {
+            text-align: center;
+            color: black;
+        }
+        h2
+        {   
+            text-align:center;
+            color: red;
+        }
+            h3
+            {   
+                text-align:center;
+                color:pink;
+            }
+            h4
+            {
+                text-align:center;
+                color: blue;
+            }
+            h5
+            {
+                text-align: center;
+                background-color: pink;
+            }
+        
+        ;
+
+</style>
+<link rel="stylesheet" type="text/css" href="assets/css/css_balise_d_affichage.css">
+         <title>Balises de text et CSS</title>
     </head>
     <body>
 
@@ -50,7 +88,42 @@
          <h6>Titre de niveau 6</h6>
 
          <hr> <!-- hr horizontal ruler (régles horizontale = ligne horizontal), élément de type bloc-->
-         
+            
+            <!-- 
+             La balise <p> en HTML est utilisée pour définir un paragraphe de texte. Elle indique au navigateur web que le texte à l'intérieur de la balise doit être interprété comme un paragraphe distinct. 
+                Les paragraphes sont des éléments de type bloc
+            On ne doit pas mettre un paragraphe dans un paragraphe 
+                 -->
+            <p>Ceci est un paragraphe, il n'y a qu'une seule phrase..</p>
+            <p>Et là un second paragraphe.</p>
+            <p>
+                un paragraphe
+                sur
+                 plusieurs
+                ligne dans le code
+            </p>
+            <hr>
+            <h2 class="titre2">le CSS : Cascading Style Sheet</h2>
+            <p>Le CSS perment de faire du style sur nos page HTML</p>
+            <!-- 
+                3 façon pour declarer le style:
+                    - style en ligne : avec l'attribute style dans la balise ouvrante
+                    -style dans la balise >style> directement dans la partie hear (kl'en-tet)
+                    - déclarer le style dans un ficher .css : feuille de style
+             -->
+             <h3>Le CSS dans la balise</h3>
+             <p>La premiér façon de faire du style dans un élément  est de déclarer l'attribut style sur celui-là. Ce n'est pas la meilleur maniére la faire</p>
+             <p style="color: #ff3366; font-weight: bolder;">Je suis un paragraphe styléééééé !</p>
+             <h3>Le CSS dans l'en-tete</h3>
+             <p>Une seconde façon de faire du style sur notre page est de mettre la balise style dans la partie head. Cette méthode n'est toujours pas la plus conseillée mais elle permet plus de choses que la méthode balise en ligne, on peut désormais gràce à cette méthode viser plusieurs éléments d'un coup. Example, on met du ris en fond sur le corps de la page, les h2 en rouge et les h3 avec un fond rose</p>
+             <h3>
+                Le CSS dans une feuille de style externe
+             </h3>
+             <p>
+                la derniére et meilleure façon  pour faire du style est la méthode suivente :
+                oncrée un dossier CSS avec un ficher style.css à l'intérieur il faudra alors
+                lier nos deux fichers gràce à la balise link. On pourra alors faire du style sur les éléments aui se trouvent dans notre page. Example, ondéclare que tous les paragraphes doivent etre en bleu.
+             </p>
 
     </body>
 
