@@ -6,10 +6,8 @@ selecteur {
     propriété: valeur;
 }
 */
-p
-{
-    color: blueviolet;
-}
+
+
 h2
 {
     color: yellow;
@@ -22,3 +20,22 @@ h2
         ->notation rgba(255,255,255,0) -> le dernier chiffre correspond à l'opacité : entre 0 (transparent) et 1 (opaque)
         -notation avec mots clés -> red, green, bleu ... 
 */
+p
+{
+    text-align: center;
+    color: greenyellow;
+    
+}
+pre
+{background-color: red;
+    color: white;
+
+}
+.span12
+{color: blue;
+
+}
+.span123
+{
+    color: yellow;
+}
