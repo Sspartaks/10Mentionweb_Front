@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta name="description" content="Les images en HTML">
+    <meta name="author" content="Spartak">
+    
+     <link rel="stylesheet" type="text/css" href="assets/css/03_les_images.css">
+    <title>Afficher des images</title>
+</head>
+<body>
+    <h1 >Les images</h1>
+    <!-- 
+        La balise <img> est une balise HTML utilisée pour incorporer une image dans une page web.
+        C'est une balise de la famille  "orpholine" ou "autofermante" et de type inline
+        L'attribut "src" :  cet attribut est obligatoire et spécifie le chemin ou l'URL de l'image que vous souhaitez inclure sur la page. 
+        L'attribut "alt" : « texte alternatif » cet attribut est également important. Il fournit un texte alternatif décrivant le contenu de l'image. 
+        Cela est crucial pour l'accessibilité, car le texte alternatif est affiché à la place de l'image si celle-ci ne peut pas être chargée ou pour les utilisateurs qui utilisent des lecteurs d'écran (personne non-voyantes) 
+    -->
+    <h2>1/ Image insérée en HTML</h2>
+    <img class="imag1" src="https://pbs.twimg.com/media/CWHyZnsWcAAJzCI.jpg" alt="chat" title="Chat">
+    
+    <!-- ici dans src j'ai mis un chemin absolu de l'image -->
+    <a href="https://www.google.com/search?q=vana+cats&tbm=isch&ved=2ahUKEwjewKS7k_uDAxXjYKQEHUdtBuQQ2-cCegQIABAA&oq=vana+cats&gs_lcp=CgNpbWcQDFAAWABgoQhoAHAAeACAAQCIAQCSAQCYAQCqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=kLKzZd64DePBkdUPx9qZoA4&bih=731&biw=1600&rlz=1C1DHFH_frFR1093FR1093" target="_blank" title="Vana Chat" alt="1 cat">
+        <img class="imag2" src="assets/img/VAN_CAT.png" alt="Cat 2"></a>
+        <a href="https://www.google.com/search?q=siamski+kot&tbm=isch&rlz=1C1DHFH_frFR1093FR1093&hl=fr&sa=X&ved=2ahUKEwifv9WVmvuDAxXjY6QEHQDWBxYQBXoECAEQPw&biw=1583&bih=731"><img class="imag3" src="assets/img/kot.jpg" title="Chat" alt="CHat"></a>
+        <h2>2/ Les figures</h2>
+        <!--  
+        Les figures sont des éléments qui viennent enrichir le texte pour compléter les informations sur l'image.
+        Ces balises sont utilisées pour encapsuler des éléments multimédias tels que des images, des graphiques, des vidéos, etc., dans le contenu du texte pour apporter une signification ou des explications supplémentaires.
+        
+        Une figure est plus souvent accompagnée d'une légende. Pour ajouter une légende, utilisez la balise <figcaption> à l'intérieur de la balise <figure>  pour décrire ou expliquer le contenu multimédia qu'elle entoure comme ceci:
+    -->
+    <!-- Lorsqu'on utilise un raccourci img+figcaption cela siginie que ces deux éléments sont au même niveau -->
+    <figure>
+        <img class="imag4" src="assets/img/british.jpg" alt="british" title="British">
+        <figcaption class="fig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at quasi vel quo et debitis expedita amet error quaerat vitae quisquam qui doloribus, molestias, repudiandae ea soluta voluptatibus excepturi. Dignissimos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius velit nostrum in illum, dolor non quia recusandae culpa. Illum, maxime optio praesentium quam iste nulla explicabo cumque fugit voluptas!
+        </figcaption>
+    </figure>
+    <h2>3/ Les image de fond insérée en CSS</h2>
+<!-- 
+        La balise div est une balise universelle, elle n'as pas de valeur sémantique, c'est une balise de division qui est utilisée pour grouper et diviser le contenu d'une page web en sections distinctes. "div" est une abréviation de "division", et la balise <div> est souvent utilisée comme un conteneur générique pour d'autres éléments HTML, permettant de les regrouper et d'appliquer des styles ou des comportements spécifiques à ce groupe.-->
+    <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet corrupti veniam voluptate fuga, odit nisi doloribus facilis quisquam pariatur qui, perspiciatis tempore nam et laboriosam consequatur? Quae, id quaerat.
+            Rerum tenetur ipsa aspernatur saepe, dolores placeat officiis eligendi eum soluta officia fugiat et ipsum. Minus adipisci consequatur sapiente, aliquid, suscipit dignissimos voluptatem ullam, perspiciatis iure possimus aperiam est odit.
+            Necessitatibus ipsum culpa, sint, voluptas tempora soluta sit dolores non obcaecati commodi facere, iure molestiae voluptates est unde iste voluptatibus. Neque consequatur excepturi obcaecati porro ex vero veritatis maiores omnis.
+          </p>  
+    </div>
+</body>
+</html>

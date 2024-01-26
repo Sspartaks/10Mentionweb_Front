@@ -1,7 +1,31 @@
+body
+{
+    background-color: #ff3366;
+
+}
 h1
 {
 text-align: center;
 }
 h2{
     text-align: center;
+}
+.youtube
+{
+    color: yellow;
+    text-decoration: none;/* permet de changer décoration de text, avec la valeyr none je désactive le surlignement */
+
+}
+/* une pseudo classe est un mot clé préfixe par deux points, qui s'ajoute au selecteur pour applique un style à un élément dans un cas particuler */
+a:hover {/* :hover désigne un objet survolé par le curseur de la souris ça peut être un lien ou n'importe quel élément html*/
+    text-decoration: underline;
+    color: gray;
+    background-color: gold;
+}
+a:visited{/*la pseudo classe ":visited" désingne un lien dont la page cible a déjà visité*/
+    color: blue;
+}
+#bas
+{
+    color: #ff3366;
 }
