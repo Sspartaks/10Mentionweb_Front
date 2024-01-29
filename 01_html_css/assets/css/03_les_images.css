@@ -91,3 +91,52 @@ div p{
     padding: 40px;
     background-color: rgba(5, 19, 21, .5);
 }
+/* .imag5
+{
+    width: 300px; définit la  largeur des images à 500 pixels
+    height: 300px;
+    border: dotted 2px red;
+}
+.imag6
+{
+    width: 300px; définit la  largeur des images à 500 pixels
+    height: 300px;
+    border: dotted 2px red;
+}
+.imag7
+{
+    width: 300px; définit la  largeur des images à 500 pixels
+    height: 300px;
+    border: dotted 2px red;
+}  
+*/
+/* style pout la classe nommée imagecheval */
+.imageCheval
+{
+    display: block;
+/* la propriété transition permet de spécifier une transition animée entre les états d'un element */
+    transition: 1s;
+}
+.imageCheval:hover
+{
+    /* La propri"t" tronsform avec la fonction scale(), permet de modifier l'éecelle d'un élément en modifiant ssa taille. La fonction scale() prend un argument, qui est facture d'échelle */
+    transform: scale(1.1);/* Agrandit l'élément à 110%de sa taille  origine*/
+    /* animation-name: cheval;
+    animation-duration: 4s;
+    animation-delay: -1s; */
+}
+/* @keyframes cheval {
+    from {}
+    to{}
+} */
+/* style pout la classe nommée imageDauphin */
+.imageDauphin
+{
+    margin: 0 0 0 500px;
+    display: block;/*définit l'affichage de l'élément en tant que bloc*/
+    transition: transform 2s;
+}
+.imageDauphin:hover
+{
+    transform: rotate(7deg);/* Fait tourner l'image de 7deg lorsqu'elle est survolée */
+}

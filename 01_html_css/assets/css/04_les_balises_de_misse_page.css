@@ -1,0 +1,43 @@
+/* Feuille de style pour la page : balises de mise en page */
+body
+{
+    background-color: #EEEDEB;
+}
+.navigation
+{
+    text-align: center;
+    border: solid 2px #3c0753;
+    padding: 20px;
+    
+}
+h1{
+    text-transform:uppercase;
+    color: #3c0753;
+    font-size: 50px;
+}
+.navigation a
+{
+    background-color: #D9A9DB;
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    display: inline-block;
+    width: 33%;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+.navigation a:hover
+{
+    background-color: #3c0753;
+}
+div.main {
+    margin-top: 10px;
+    border: 2px solid #3c0753;
+    padding: 20px 50px;
+}
+div.section1 {
+    text-align: center;
+}
+div.section1 img {
+    border-radius: 20px;
+}
