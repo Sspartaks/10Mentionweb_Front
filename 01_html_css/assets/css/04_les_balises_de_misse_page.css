@@ -35,9 +35,49 @@ div.main {
     border: 2px solid #3c0753;
     padding: 20px 50px;
 }
-div.section1 {
+div.section1, div.section2 {
     text-align: center;
 }
 div.section1 img {
     border-radius: 20px;
+}
+div.section2{
+    background-image: url(/assets/img/maik.jpg);
+    padding: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+  /* filter: blur(4px); */
+}
+div.section2 p {
+    display: inline-block;
+    border:solid 2px blue;
+    width: 33%;
+    padding: 20px;
+    background-color: black;
+    text-align: left;
+
+}
+div.pledepage {
+    border:solid 2px #3c0753;
+    margin-top: 20px;
+    /* text-align: center; */
+
+}
+div.pledepage ul{
+    display: inline-block;
+    width: 30%;
+    list-style: armenian;
+}
+div.pledepage ul li{
+    margin-bottom: 20px;
+}
+div.pledepage ul li a {
+    color: #3c0753;
+    background-color: pink;
+    padding: 8px 11px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
 }
