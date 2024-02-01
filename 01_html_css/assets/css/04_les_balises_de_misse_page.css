@@ -1,47 +1,43 @@
 /* Feuille de style pour la page : balises de mise en page */
 body
 {
-    background-color: #EEEDEB;
+    background-image: url(../img/catjpg.jpg);
+    background-attachment: fixed;
+   
 }
 .navigation
 {
     text-align: center;
     border: solid 2px #3c0753;
     padding: 20px;
+    width: 100%;
+    display:flexbox;
+    justify-content: center;
     
 }
+
 h1{
     text-transform:uppercase;
     color: #3c0753;
     font-size: 50px;
 }
-.navigation a, div.pledepage ul li a
-{
-    background-color: #D9A9DB;
-    color: white;
-    text-decoration: none;
-    font-weight:bold;
-    display: inline-block;
-    width: 33%;
-    padding: 5px 0;
-    border-radius: 10px;
-}
+
 .navigation a:hover
 {
     background-color: #3c0753;
 }
-div.main {
-    margin-top: 10px;
-    border: 2px solid #3c0753;
+section.main {
+    margin-top: 100px;
+    border: 10px solid white;
     padding: 20px 50px;
 }
-div.section1, div.section2 {
+section.section1, div.section2 {
     text-align: center;
 }
-div.section1 img {
+section.section1 img {
     border-radius: 20px;
 }
-div.section2{
+section.section2{
     background-image: url(/assets/img/maik.jpg);
     padding: 200px;
     background-repeat: no-repeat;
@@ -50,7 +46,7 @@ div.section2{
     color: white;
   /* filter: blur(4px); */
 }
-div.section2 p {
+section.section2 p {
     display: inline-block;
     border:solid 2px blue;
     width: 33%;
@@ -59,26 +55,43 @@ div.section2 p {
     text-align: left;
 
 }
-div.pledepage {
+footer.pledepage {
     border:solid 2px #3c0753;
     margin-top: 20px;
     /* text-align: center; */
 
 }
-div.pledepage ul{
+footer.pledepage ul{
     display: inline-block;
     width: 30%;
     list-style:upper-roman;
 }
-div.pledepage ul li{
+footer.pledepage ul li{
     margin-bottom: 20px;
 }
- /* {
+
+footer.pledepage ul li a {
     color: #3c0753;
-    background-color: pink;
     padding: 8px 11px;
-    border-radius: 3px;
-    font-weight: bold;
+    
+    
+}
+
+footer.pledepage ul li a, .navigation a{
+    background-color: #D9A9DB;
     text-decoration: none;
-} */
+    font-weight:bold;
+    border-radius: 10px;
+}
+.pledepage a:hover{
+    background-color: yellow;
+
+}
+.navigation a
+{
+    color: white;
+    display: inline-block;
+    width: 33%;
+    padding: 5px 0;
+}
 

@@ -1,0 +1,24 @@
+.inPute
+{
+    width: 80px;
+    margin: 0 0 0 5px;
+}
+#buttton
+{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+h1{
+    color: brown;
+    text-align: center;
+}
+#site-search
+{
+    color: rgb(115, 0, 255);
+    background-color: blue;
+    
+}
+#site-search:hover{
+    background-color: yellow;
+}
