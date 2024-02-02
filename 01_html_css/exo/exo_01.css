@@ -1,0 +1,28 @@
+body{
+    background-color: beige;
+}
+.main{
+    border: solid 2px black;
+
+}
+.main section
+{
+    
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+
+}
+.primier{ 
+    display: inline-block;
+    background-color: yellow;
+}
+.deuxeme{
+    display: inline-block;
+    background-color: blue;    
+}
+.troiseme{
+    display: inline-block;
+    background-color: green;
+}
