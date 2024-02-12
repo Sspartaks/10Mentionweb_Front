@@ -1,0 +1,24 @@
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#cbd285 ;
+    padding:10px ;
+}
+nav a {
+    color: black;
+    font-weight: bold;
+}
+/* #conteneurSpace-evenly{
+    background-color: #cbd285;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} */
+
+
+
