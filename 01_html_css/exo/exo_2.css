@@ -1,0 +1,108 @@
+body{
+    background-color: #FFFFFF;
+    width: 100%;
+    margin: 100px auto;
+    padding: 200px;
+}
+.style{
+    
+    text-align: center;
+}
+*{box-sizing: border-box;
+    text-decoration: none;}
+.style :first-child {
+    line-height: 40px;
+    height: 40px;
+    font-weight: bold;
+    background-color: #FFD6D6;
+
+}
+
+.style :last-child
+ {
+    line-height: 30px;
+    height: 30px;
+    background-color: #F7F39A;
+}
+
+.style2 :first-child
+{ 
+    
+    text-align: center;
+    width: 200px; 
+    background-color: #10828C;
+}
+.style2 :nth-child(2) {
+    text-align: center;
+    width: 900px;
+    background-color: #A0B08B;
+}
+.style2 div{
+    line-height: 700px;
+    height: 700px;
+}
+#exo2
+{
+    display: flex;
+   
+}
+.style3{
+    
+    text-align: center;
+}
+ #exo4{
+    display: flex;
+    text-align: center;
+    line-height: 700px;
+} 
+.style3 :first-child{
+    line-height: 60px;
+    height: 60px;
+    background-color:#FFD6D6 ;
+}
+.style3 :last-child
+{
+    line-height: 60px;
+    height: 60px;
+    background-color: #008080;
+}
+.style4 :first-child
+{
+    width: 20%;
+    height: 700px;
+   background-color: #FF6347;
+}
+.style4 :nth-child(2)
+{
+   
+    width: 60%;
+    height: 700px;
+    background-color:#D8BFD8;
+}
+.style4 :last-child
+{
+    width: 20%;
+    height: 700px;
+    background-color: #FF6347;
+}
+.logo
+{
+    width: 150px;
+    margin: auto;
+}
+#logo1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color:#FFFFFF;
+    padding:10px ;
+}
+nav a {
+    color: #FF336E;
+    font-weight: bold;
+}

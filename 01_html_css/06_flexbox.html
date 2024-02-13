@@ -211,6 +211,190 @@
                 <div>Element 3</div>
             </div>
         </section>
+        <section>
+            <h2>
+                E - retour à la  ligne
+            </h2>
+            <p>par defaut les blocs essaient de rester sur la meme ligne même s'ils n' ont pas la place ( ce qui provoque parfois des problèmes de conception) . Si vous le souhaitez , vous pouvez demander au block de passer à la ligne lorsqu'il n'ont plus de place en utilisant la propriete <span>flex-wrap</span></p>
+        <p>Elle peut prendre les valeurs suivant</p>
+        <ul>
+            <li>nowrap : pas fe retour à la ligne (par defaut)</li>
+            <li>wrap : les élément vont a la ligne lorsque n'y a plus de place</li>
+            <li>wrap-reverse : leséléments vont à la ligne lorsqu'il y'a pas de place en sens inverse</li>
+        </ul>
+      <h3>nowrap</h3>
+      <div class="style style2" id="conteneurNoWrap">
+          <div>Element 1</div>
+          <div>Element 2</div>
+          <div>Element 3</div>
+          <div>Element 4</div>
+          <div>Element 5</div>
+          <div>Element 6</div>
+          <div>Element 7</div>
+          <div>Element 8</div>
+          <div>Element 9</div>
+          <div>Element 10</div>
+          <div>Element 11</div>
+      </div>
+      <h3>wrap</h3>
+      <div class="style style2" id="conteneurWrap">
+          <div>Element 1</div>
+          <div>Element 2</div>
+          <div>Element 3</div>
+          <div>Element 4</div>
+          <div>Element 5</div>
+          <div>Element 6</div>
+          <div>Element 7</div>
+          <div>Element 8</div>
+          <div>Element 9</div>
+          <div>Element 10</div>
+          <div>Element 11</div>
+      </div>
+
+      <h3>wrap-reverse</h3>
+      <div class="style style2" id="conteneurWrapReverse">
+          <div>Element 1</div>
+          <div>Element 2</div>
+          <div>Element 3</div>
+          <div>Element 4</div>
+          <div>Element 5</div>
+          <div>Element 6</div>
+          <div>Element 7</div>
+          <div>Element 8</div>
+          <div>Element 9</div>
+          <div>Element 10</div>
+          <div>Element 11</div>
+      </div>
+        </section>
+        <section>
+            <h2>F - Répartir plusieurs lignes</h2>
+        <p>
+            Si vous avez plusieurs ligne dans votre flexbox,vous pouvez choisir comment celles-ci seront réparties avec
+            <span>align-content</span>.
+            Cette propriété permet de gérer l'alignement des différents lignes (ou colonnes) les par rapports au autres.
+            Cette propriété n'aura d'éffet que si le conteneur flexible posséde plusieurs lignes(si l'axe principale est
+            horizontal) ou plusieurs colonnes ( si l'axe principle est vertical) et que si le flex-wrap est présent.
+        </p>
+
+        <p> Les valeurs de cette propriété :</p>
+        <ul>
+            <li>flex-start : les éléments sont placés au début</li>
+            <li>flex-end : les élélements sont placés à la fin</li>
+            <li>center : les éléments sont placés au centre</li>
+            <li>space-between : les éléments sont séparés avec de l'éspace entre eux </li>
+            <li>space-around : les éléments sont séparés avec de l'éspace entre eux, mais il y'a aussi de l'éspace au
+                début et à la fin</li>
+            <li>space-evenly : Les éléments sont répartis uniformément dans le conteneur d'alignement le long de l'axe
+                principal. </li>
+            <li>stretch (par défaut) : les éléments s'étirent pour occuper tout l'éspace</li>
+        </ul>
+<h3>Strech par defaut</h3>
+<div class="style style2 wrap" id="conteneurStrech">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>
+<h3>Flex-start</h3>
+<div class="style style2 wrap" id="conteneurFL-ST">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>
+<h3>Flex-end</h3>
+<div class="style style2 wrap" id="conteneurFL-END">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>
+<h3>center</h3>
+<div class="style style2 wrap" id="conteneurCE">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>
+<h3>space-between</h3>
+<div class="style style2 wrap" id="conteneurSP-BT">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>
+<h3>space-around</h3>
+<div class="style style2 wrap" id="conteneurSP-AR">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>
+<h3>space-evenly</h3>
+<div class="style style2 wrap" id="conteneurSP-EV">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>
+
+        </section>
         </main>
         <footer>
 

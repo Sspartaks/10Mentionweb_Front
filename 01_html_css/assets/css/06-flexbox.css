@@ -164,7 +164,7 @@ span
 }
 #conteneurSpace-evenly-vertical{
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     /* Dans cet exemple, justify-content est défini sur space-evenly. les éléments flexibles sont répartis verticalement dans le conteneur avec un espacement égal entre eux, ainsi qu'entre le premier élément et le bord supérieur du conteneur, et entre le dernier élément et le bord inférieur du conteneur.. */
     height:700px ;
 }
@@ -214,4 +214,59 @@ align-items: flex-end;/* Dans cet exemple, avec la valeur flex-end, les flex-ite
 }
 #conteneurE-AS :nth-child(2){
     align-self: flex-end;
+}
+/**********E - retourn à la ligne**********/
+.style2 :nth-child(odd)
+{/*Pseudo classe qui selectionne tout les elements avec un ordre pair*/
+    background-color: orange;
+}
+.style2 :nth-child(even)
+{
+    background-color: blue;
+}
+/* Si flex-wrap vaut nowrap et que les flex-items sont dans leur configuration par défaut, alors les flex-items seront rétrécis, si le flex-container est lui-même suffisamment rétréci*/
+#conteneurWrap{
+    flex-wrap: wrap;/* Si flex-wrap vaut wrap, alors les flex-items seront répartis sur une nouvelle ligne */
+}
+#conteneurWrapReverse
+{
+    flex-wrap: wrap-reverse;/* les éléments flexibles vont passer à la ligne de manière inverse par rapport à leur ordre d'origine*/
+}
+/*******E - repartir plusieurs lignes********/
+.wrap
+{
+    flex-wrap: wrap;
+}
+#conteneurStrech div
+{
+    height: auto;
+}
+#conteneurStrech
+{
+   
+    align-content: stretch;/* Les deux lignes (ou plus) de flex-items s'étirent pour occuper tout l'espace disponible du flex-container*/
+}
+#conteneurFL-ST
+{
+    align-content: flex-start;/* Les deux lignes (ou plus) de flex-items sont réparties, sur le haut du flex-container, suivant l'axe secondaire*/
+}
+#conteneurFL-END
+{
+    align-content: flex-end; /*Les deux lignes (ou plus) de flex-items sont réparties, sur le bas du flex-container, suivant de l'axe secondaire.*/
+}
+#conteneurCE
+{
+    align-content: center;/* Les deux lignes (ou plus) de flex-items sont réparties, au centre du flex-container. L'espace disponible est équitablement réparti, de part et d'autre, de ces deux lignes*/
+}
+#conteneurSP-BT
+{
+    align-content: space-between;/* Les deux lignes (ou plus) de flex-items sont placées contre les bords du flex-container. L'espace restant est placé entre les deux lignes.*/
+}
+#conteneurSP-AR
+{
+    align-content: space-around;/*L'espace disponible est réparti entre les deux lignes de flex-items et les bords du flex-container. L'espace sur les bords vaut la moitié de l'espace entre les lignes.*/
+}
+#conteneurSP-EV
+{
+    align-content: space-evenly; /* L'espace disponible est réparti de manière équitable entre les deux lignes de flex-items et les bords du flex-container.*/
 }
