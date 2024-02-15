@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 4mm ridge #ff3366;
+}
+.logo img
+{
+    
+    width: 150px;
+    height: 150px;
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px auto;
+}
+nav a
+{
+    font-weight: bolder;
+    color: #ff3366;
+}
+/* Style pour main*/
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+aside 
+{
+    width: 30%;
+}
+main > div {
+    width: 70%;
+}

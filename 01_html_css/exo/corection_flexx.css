@@ -1,0 +1,76 @@
+*{
+    box-sizing:border-box ;
+    text-decoration: none;
+}
+section{
+    width: 50%;
+    /* margin: 100px auto; */
+    margin: 100px auto;
+    text-align: center;
+}
+#zoning1
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffd6d6;
+}
+h3{
+    width: 100%;
+}
+#zoning1 header{
+    background-color: #f7f39a;
+    width: 100%;
+}
+#zoning1 aside, #zoning1 section
+{
+    height: 500px;
+    line-height: 500px;
+}
+#zoning1 aside{
+    background-color: #10828c;
+    width: 20%;
+}
+#zoning1 section{
+    background-color: #A0B08B;
+    width: 80%;
+   margin: 0;
+}
+/**********************exercice 2222222***************/
+#zoning2
+{
+   
+    /* flex-wrap: wrap; */
+    background-color: #ffd6d6;
+    text-align: center;
+}
+#zoning2 header
+{
+    background-color: teal;
+    height: 70px;
+    line-height: 70px;
+}
+
+#zoning2 div
+{
+    display: flex;
+}
+#zoning2 div div
+{
+    
+    width: 60%;
+    height: 500px;
+    line-height: 500px;
+}
+#zoning2 div div p
+{
+    
+    width: 100%;
+}
+ #zoning2 aside 
+{
+    background-color: tomato;
+    width: 20%;
+    height: 500px;
+    line-height: 500px;
+} 
+
