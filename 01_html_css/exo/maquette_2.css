@@ -29,7 +29,7 @@ nav a
     font-weight: bolder;
     color: #ff3366;
 }
-div {
+body div {
     display: flex;
     width: 90%;
     margin: 50px auto;
@@ -38,5 +38,47 @@ div {
 }
 h3{
    text-align: center;
-   padding:150px; 
+   padding: 50px; 
 }
+.image
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+#first
+{
+    display: flex;
+    flex-direction: column;
+}
+/* #first section p
+{
+    text-wrap: wrap;
+} */
+/* .image :first-child
+{
+    background-color: #FFE7E7;
+    height: 500px;
+    width: 500px;
+} */
+
+.main1 :last-child
+{
+    line-height: 150px;
+    background-color: yellowgreen;
+    width: 700px;
+    height: 500px;
+    border-radius: 30px;
+}
+#main1
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    div div aside p
+    {
+        
+        line-height: 0.9em;
+        text-align: left;
+        padding: 30px;
+    }

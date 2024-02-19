@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0045)http://127.0.0.1:5500/07_les_formulaires.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="spartak : Les formulaires">
     <meta name="author" content="Spartak Smbatyan">
@@ -11,11 +11,11 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="assets/css/07_les_formulaires.css">
+    <link rel="stylesheet" href="./Les formulaires en HTML_files/07_les_formulaires.css">
 
     <title>Les formulaires en HTML</title>
 </head>
-<body>
+<body cz-shortcut-listen="true">
     <h1>Mon premier formulaire en HTML</h1>
     <!-- 
         Le formulaire sert à récupérer des données que l'utilisateur va entrer et les envoyer au serveurs pour un traitement (en PHP par exemple) :login, formulaire de contacrt et meme le chat facebook 
@@ -28,8 +28,7 @@
                 -> method="get" : les informations sont passées dans la barre d'adresse
                 -> method="post" : envoie les données dans le corps de la requête sans passer par la barre d'adresse , c'est la méthode la plus utilisée et la plus sécurisée.
         -->
-        <form action="06_flexbox.html" method="post" enctype="multipart/form-data" autocomplete="off">
-            <!--  Lorsque la valeur de l'attribut autocomplete est défini sur "off", cela signifie que les navigateurs ne doivent pas suggérer ou compléter automatiquement les valeurs des champs de formulaire basées sur l'historique de saisie de l'utilisateur -->
+        <form action="http://127.0.0.1:5500/06_flexbox.html" method="post" enctype="multipart/form-data">
             <!-- enctype="multipart/form-data" on utilise quand on a un cham^d'envoi de ficher dans le folmulaire -->
             <!--Debut du formulaire-->
             <!-- label désigne l'etiquette du chaps , elle permet de définir et d'informer sur l'info attendu -->
@@ -41,7 +40,7 @@
                <div>
                     
                     <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" placeholder="Votre  nom de famille" required>
+                    <input type="text" id="nom" name="nom" placeholder="Votre  nom de famille" required="">
                     <!-- input : élément de saisie de formulaire : son apparence repose grandement sur la valeur de l'attribut type qui l'accompagne -->
                     <!-- inpute avec type text -> zone de text monoligne 
                     name -> pour récupérer la valeur en php(pas d'espace,ni acent,ni caracyéres spéciaux)
@@ -52,7 +51,7 @@
     
            <div>
                 <label for="prenom">Prenom</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Votre prenom" autofocus="1" aria-label="Votre prenom" maxlength="15" required>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prenom" maxlength="15" required="">
                 <!-- maxlength : le nombre de caractéres maximum --> 
            </div>
            <div>
@@ -79,7 +78,7 @@
                 <label for="15-25">15 - 25</label>
             </div>
             <div>
-                <input type="radio" name="age1" id="25-40" value="entre25-40" checked>
+                <input type="radio" name="age1" id="25-40" value="entre25-40" checked="">
                 <label for="25-40">25- 40</label>
             </div>
             <div>
@@ -110,8 +109,7 @@
                     <option value="royaume-uni">Royaume-Uni</option>
                 </optgroup>
                 <optgroup label="Amerique">
-                    <option value="canada" selected>Canada</option>
-                    <!-- L'attribut selected est utilisé pour  définir qu'un élément d'une liste déroulante est selectioné par défault lorseque la page est chargée -->
+                    <option value="canada">Canada</option>
                     <option value="etat-unis">Etat-Unis</option>
                 </optgroup>
                 <optgroup label="Asie">
@@ -125,17 +123,17 @@
                 <legend>Information de connection</legend>
                 <div>
                     <label for="pseudo">Pseudo</label>
-                    <input type="text" name="pseudo" id="pseudo" placeholder="Trouve vous un pseudo" required>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Trouve vous un pseudo" required="">
                         
                         </div>
                 <div>
                     <label for="mdp">Mot de pass</label>
-                    <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required>
+                    <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required="">
                         <!-- type password -> permet de masquer le mot de passe -->
                         </div>
                     <div>
                         <label for="email">Votre email</label>
-                        <input type="email" name="email" id="email" placeholder="Votre email" required autocomplete="e">
+                        <input type="email" name="email" id="email" placeholder="Votre email" required="" autocomplete="email">
                         <!-- type email -> permet à l'utilisateur de saisir un email, la valeur va être automatiquement validée et vrerifée -->
                     </div>
                 
@@ -165,11 +163,11 @@
 
             </fieldset>
             <div class="envoie">
-                <input type="submit" value="S'inscrire">
+                <input type="submit" value="S&#39;inscrire">
                 <!-- pour envoyer notre formulaire , on utilise l'input de type submit -->
                 <input type="reset" value="Effacer">
                 <!-- pour vider le formulaire /remise à zero -->
-                <input type="button" value="bouton inactif" disabled>
+                <input type="button" value="bouton inactif" disabled="">
                 <!-- attribut disabled pour désactiver un élément -->
             </div>
                 <!-- 
@@ -186,5 +184,43 @@
             datetime-local: pour la date et l'heure (sans gestion du décalage horaire)
  -->
         </form>
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

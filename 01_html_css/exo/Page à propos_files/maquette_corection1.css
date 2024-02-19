@@ -123,27 +123,11 @@ aside a {
 .a_propos section:last-child
 {
     display: flex;
-    flex-wrap: wrap;
-   justify-content: space-evenly;
 }
-.a_propos section:last-child img{
-
+.a_propos:last-child img{
     width: 100px;
     height: 100px;
-
 }
-.a_propos section:last-child h2
-{
-    width: 100%;
-}
-.a_propos section:last-child div{
-    text-align: center;
-    width: 30%;   
-}
- .a_propos section:last-child p{
-    margin: 50px 50px;
-} 
-
 /*Stle pour footer*/
 
 footer
