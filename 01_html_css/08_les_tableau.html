@@ -62,5 +62,97 @@
             
         
     </table>
+    <br><br><br><br><br>
+    <!-- tableau 2 -->
+    <h2>rowspan / colspan</h2>
+    <p>"<code>rowspan</code> "
+    est un attribute  qui permet d'indiquer le nombre di lignes qu'un cellule <code>&lt;td></code>
+        de tableau <code>&lt;table></code> peut couvrir.Cet attribut est utile si vous souhitez qu'une cellule s'etende verticalement sur plusieur lignes .Example si onmet <code>rowspan="5"</code>, alors notre cellule occupera l'espase de 5 cellules verticalement . Cependat, il est important de noter que lorsq'on utilise cette manipulation , il faut retirer les <em>td</em> correspondants des autres lignes.
+</p>
+<br><br><br><br><br><br><br><br>
+<table >
+    <tr>
+        <td>nom</td>
+        <td>Ferchichi</td>
+    </tr>
+    <tr>
+        <td>prenom</td>
+        <td>Sahar</td>
+    </tr>
+    
+    <tr >
+        <td  rowspan="2">numero</td>
+        <td>4554</td>
+    </tr>
+    
+    <tr>
+      
+        <td>546546</td>
+    </tr>
+</table>
+<br><br><br><br><br><br><br><br><br>
+
+
+<table id="demoRowspan">
+    <caption>
+        Exaple de tableau avec <em>rowspan</em>
+    </caption>
+    <tr>
+        <td>nom</td>
+        <td>Ferchichi</td>
+    </tr>
+
+    <tr >
+        <td  rowspan="2">Email</td>
+        <td>4554</td>
+    </tr>
+    
+    <tr>
+      
+        <td>spartak3x776@gmail.com</td>
+    </tr>
+</table>
+<br><br><br><br><br>
+<p>
+    "<code>colspan</code>" est un attribut qui permet d'indiquer le nombre de colonnes qu’une cellule <code>&lt;td></code> de tableau <code>&lt;table></code> doit couvrir. Cet attribut est utile lorsque vous souhaitez qu’une cellule s’étende horizontalement sur plusieurs colonnes .Exemple si on met <code>colspan="3"</code>, alors notre cellule occupera l'espace de 3 cellules horizontalement. 
+</p>
+
+<table id="democolspan">
+    <caption>Les langages web</caption>
+    <tr>
+        <td colspan="3">Langages de front</td>
+        <td colspan="3">Langages de back</td>
+    </tr>
+    <tr>
+        <td>HTML</td>
+        <td>CSS</td>
+        <td>JS</td>
+        <td>SQl</td>
+        <td>NoSQL</td>
+        <td>php</td>
+    </tr>
+</table>
+
+ <table id="democolspasn">
+    <caption>
+        Exaple de tableau avec <em>colspan</em>
+    </caption>
+    <tr>
+        <td colspan="2">Sahar Ferchichi</td>
+         <td>Ferchichi</td> 
+    </tr>
+
+    <tr >
+        <td  rowspan="2">Email</td>
+        <td>4554</td>
+    </tr>
+    
+    <tr>
+      
+        <td>spartak3x776@gmail.com</td>
+    </tr>
+</table> 
+<br><br><br><br><br>
+
 </body>
 </html>

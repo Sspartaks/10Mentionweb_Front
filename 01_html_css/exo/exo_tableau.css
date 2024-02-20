@@ -1,17 +1,10 @@
 *{
     box-sizing: border-box;
 }
-
 body{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     background-color: #ffe7e7;
-}
-
-h1{
-    text-align: center;
-
-
 }
 caption{
     color:#6e2142;
@@ -23,9 +16,8 @@ table{
     border: 3px solid #6e2142;
     width: 90%;
     margin-top: 50px;
-    background-color: gray;
+    background-color: #FFF6E9;
     padding: 30px;
-    /* par défaut la border contient 2 traits,pour que le trait soit unique on utilimse la propriete border-collapse avec une valeur collapse */
     border-collapse: collapse;
     text-align: center;
 }
@@ -34,9 +26,6 @@ th,td{
     border: 3px solid #6e2142;
 }
 
-thead,tfoot {
-    background-color: blue;
-}
-#demoRowspan tr :first-child:not(:last-child) {
+thead {
     background-color: #be7575;
 }

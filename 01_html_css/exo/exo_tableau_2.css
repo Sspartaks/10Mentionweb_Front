@@ -7,36 +7,38 @@ body{
     margin: 0 auto;
     background-color: #ffe7e7;
 }
-
-h1{
-    text-align: center;
-
-
-}
-caption{
-    color:#6e2142;
-    padding: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 table{
+   
     border: 3px solid #6e2142;
     width: 90%;
     margin-top: 50px;
-    background-color: gray;
+    /* background-color: gray; */
     padding: 30px;
     /* par défaut la border contient 2 traits,pour que le trait soit unique on utilimse la propriete border-collapse avec une valeur collapse */
     border-collapse: collapse;
-    text-align: center;
-}
-th,td{
-    padding: 10px;
-    border: 3px solid #6e2142;
+    
 }
 
-thead,tfoot {
-    background-color: blue;
+tr{
+    background-color: white;
 }
-#demoRowspan tr :first-child:not(:last-child) {
-    background-color: #be7575;
+td{ 
+    width: 50px;
+    padding: 40px;
+    
+}
+.style
+{
+    background-color: black;
+}
+table #style2
+{
+    /* border: 10px solid blue; */
+}
+#style2 tr,td{
+     /* border: 2px solid blue; */
+}
+.style1
+{
+    background-color: red;
 }
