@@ -7,17 +7,7 @@ body{
     margin: 0 auto;
     background-color: #ffe7e7;
 }
-table{
-   
-    border: 3px solid #6e2142;
-    width: 90%;
-    margin-top: 50px;
-    /* background-color: gray; */
-    padding: 30px;
-    /* par défaut la border contient 2 traits,pour que le trait soit unique on utilimse la propriete border-collapse avec une valeur collapse */
-    border-collapse: collapse;
-    
-}
+
 
 tr{
     background-color: white;

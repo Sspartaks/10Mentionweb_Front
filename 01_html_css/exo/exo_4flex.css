@@ -1,13 +1,15 @@
 *{
     box-sizing: border-box;
     text-decoration: none;
+    margin: 0;
 }
 body
 {
-    width:60%;
-    border: 4px solid red;
-    margin: 0 auto;
+    width:100%;
+    
+    
 }
+
 header
 {
     
@@ -17,10 +19,11 @@ header
    
 }
  header div{
+   justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     padding: 50px;
-    text-align: center;
-    width: 33.33333%;
-    align-content: center;
+    width: 33.3333333333333%;
 }
 header nav{
     background-color:#FFEBCD ;
@@ -28,6 +31,13 @@ header nav{
     text-align: center;
     height: 50px;
     line-height: 50px;
+    
+}
+.menu{
+    display: block;
+} 
+header nav a{
+    margin: 0 20px;
 }
 header div:first-child
 {
@@ -41,10 +51,14 @@ header div:nth-child(3)
 {
     background-color:#00CED1;
 }
+section
+{display: flex;}
 #section1
 {
-    border: 10px solid white;
     display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    
 }
 #section1 div
 {
@@ -66,6 +80,7 @@ header div:nth-child(3)
 {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 #section2 div:first-child
 {
@@ -78,24 +93,28 @@ header div:nth-child(3)
     width: 25%;
     height: 200px;
     background-color:#87CEEB ;
+    line-height: 200px;
 }
 #section2 div:nth-child(3)
 {
     width: 25%;
     height: 200px;
     background-color: #40E0D0;
+    line-height: 200px;
 }
 #section2 div:nth-child(4)
 {
     width: 25%;
     height: 200px;
     background-color: #2E8B57;
+    line-height: 200px;
 }
 #section2 div:last-child
 {
     width: 25%;
     height: 200px;
     background-color: #98FB98;
+    line-height: 200px;
 }
 footer{
     display: flex;
@@ -116,4 +135,170 @@ footer div:last-child
     line-height: 70px;
     background-color: #AFEEEE;
 }
+/* @media (min-width:1200px)
+{
+   
+    body {
+        
+   max-width:1200px;
+   }
+}
+@media (min-width:1024px)
+{
+ 
+    body {
+        
+   max-width:1024px;
+   }
+}
+@media (min-width:901px)
+{
+    .menu
+    {
+     display: none;
+    }
+    
+}
+@media (min-width:480.011) and (max-width:768px) 
+{
+    .menu
+    {
+     display: none;
+    }
+   
+   #section2 div:nth-child(2)
+   {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+
+   }
+   #section2 div:nth-child(3)
+   {
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+
+   }
+   #section2 div:nth-child(4)
+   {
+    width:50%;
+   }
+   #section2 div:last-child
+   {
+    width:50%;
+   }
+}
+@media (max-width:480px)
+{
+    .menu
+    {
+     display: none;
+    }
+    header div:first-child
+    {
+        width: 50%;
+    }
+    header div:nth-child(2)
+    {
+        width: 50%;
+    }
+    header div:nth-child(3)
+    {
+        width: 100%;
+        
+    }
+    #section1 {
+        flex-wrap: wrap;
+    }
+    #section1 div:first-child
+    {
+        width: 100%;
+
+    }
+    #section1 div:last-child
+    {
+        width: 100%;
+
+    }
+
+} */
+
+@media (min-width:480px) and (max-width:768px)
+{
+    
+    .menu
+    {
+        display: none;
+    }
+    /* .sec2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    #section2 div:nth-child(2)
+    {
+        width: 50%;
+        
+    }
+    #section2 div:nth-child(3)
+    {
+        width: 50%;
+    }
+    #section2 div:nth-child(4)
+    {
+        width: 50%;
+    }
+    #section2 div:last-child
+    {
+        width: 50%;
+    }
+
+}
+@media (max-width:479.9999px)
+{
+    header div:first-child
+    {
+        width: 50%;
+    }
+    header div:nth-child(2)
+    {
+        width: 50%;
+    }
+    header div:nth-child(3)
+    {
+        width: 100%;
+    }
+    #section1 div:first-child
+    {
+        width: 100%;
+    }
+    #section1 div:last-child
+    {
+        width: 100%;
+    }
+    .menu
+    {
+        display: none;
+    }
+    #section2 div:nth-child(2)
+    {
+        width: 50%;
+        
+    }
+    #section2 div:nth-child(3)
+    {
+        width: 50%;
+    }
+    #section2 div:nth-child(4)
+    {
+        width: 50%;
+    }
+    #section2 div:last-child
+    {
+        width: 50%;
+    }   
+}
+
+
 
