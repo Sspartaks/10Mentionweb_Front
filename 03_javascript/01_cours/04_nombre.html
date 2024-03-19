@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les nombres en JS</title>
+</head>
+<body>
+    
+    <script>
+        ///////////:::::::::::::::::::::::
+            // LES NOMBRES ET LES CALCULS
+        ///////////:::::::::::::::::::::::
+
+        //POUR INITIALISER un nombre , il suffit de ecrire sans guillements
+
+            const A= 5* 10;
+            const B = 10 / 2;
+            const C = 15 - 5;
+            const D = 20 + 10;
+        // Nous pouvons effectuer tout type de calcul
+        //Addition
+            const ADDITION = A + B; 
+        console.log(ADDITION);
+        // Le résultat de l'addition de A et B est égale à : 55
+        document.write("Le résultat de l'addition de A et B est égale à :"+ADDITION);// on concatene avec une de caractére en utilisant le signe "+"
+
+        //Soustraction 
+            const SOUSTRACTION = C - 4;
+        document.write("<br> Le resultat de la soustration de C-4 est egale a :" + SOUSTRACTION);
+
+        //Multiplication
+            const MULTIPLICATION = D * 5;
+        document.write("<br> Le resultat de la multiplication de D * 5 est egale a :" + MULTIPLICATION);
+        
+        //DIVISION
+            const DIVISION = D / 10;
+        document.write("<br> Le resultat de la division de D/10 est egale a :" + DIVISION);
+
+        //MODULO
+            const MODULO = B % 10 ;
+        document.write("<br> Le resultat de la modulo de B % 10 est egale a :" + MODULO);
+
+        //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       // Raccourcis
+        let g = 10;
+        // 1éré façon
+            g = g + 5;
+        document.write(g);
+        // 2éme façon
+            g+=5;
+        document.write(g);
+
+        //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        // Incrémentation et decrimentation
+
+        //nous pouvons 1 ou enlever 1 avec ++ ou --
+        
+        let h = 50 ;
+        h++;
+        document.write(h+ '<br>');
+
+        let i = 1;
+        let j = i++;
+        document.write(j + '<br>');
+        document.write(i + '<br>');
+        
+        let k = 1;
+        let l = ++k;
+        document.write(l + '<br>');
+        document.write(k + '<br>');
+
+
+
+    </script>
+</body>
+</html>

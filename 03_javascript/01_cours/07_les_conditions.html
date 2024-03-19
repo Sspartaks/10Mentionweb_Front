@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les conditions en JS</title>
+</head>
+<body>
+    
+    <script>
+        
+
+//les operateurs de comperaison pour les structurs conditionnelle
+
+/*
+
+        > strictement superieur
+        < strictement inferieur
+        >= superieur ou égale
+        <= inferieur ou egale
+        == pour faire une comparaison de valeur // permet de verifier que les valeurs de 2 variables sont identiques
+        === pour faire une sompariasson de valeur et de type // signifie "Strictement 2gale à"// il permet de verife la valeur et le type
+        != different de en valeur
+        !== STRICTEMENT different de (Valeur et type)
+
+
+
+
+*/
+        let nbr1= 1, nbr2= 3 ,br = '<br>';
+                                             document.write(nbr1>nbr2);//false
+        document.write(br);
+        document.write(nbr1>=nbr2);// false
+        document.write(br);
+        document.write(nbr1<=nbr2);//true
+
+        let nbr3=2, nbr4= 2;
+        document.write(br);
+        document.write(nbr3 > nbr4); // false
+        document.write(br);
+        document.write(nbr3 == nbr4); //true
+        document.write(br);
+        document.write(nbr3 === nbr4); //false
+
+        document.write("<h2>Operateurs logiques </h2>")
+        //Operateurs logiques
+
+        /*
+                AND -> && 
+                OR -> || 
+                not -> !
+
+        */
+       // Operateurs AND && il evalue le resultat en true si expressions sont true , si l'une des deux expressions testé est False alors le resultat sera false
+       document.write(br);
+       document.write(true && true);//true
+       document.write(br);
+       document.write(false && false);//false
+       document.write(br);
+       document.write(true && false);//false
+       // operateur OR : il evalue le resultat en TRUe si une ou deux expressions sont true , si les deux expression sont False alors le resultat sera false
+       document.write(br);
+       document.write(true || true);//true
+       document.write(br);
+       document.write(false || false);//true
+       document.write(br);
+       document.write(true || false);//false
+       // operateur Not : IL transforme ce qui est true en False et ce qui est False en True
+       document.write(br);
+       document.write(!true)//false
+       document.write(br);
+       document.write(!false);//true
+       document.write(br);
+
+       document.write("<h2> Structure conditionnelle if, else if, else </h2>");
+       //::::::::::::::::::::::::::::::::::::::::::::
+       //// SYNTAXE
+       //::::::::::::::::::::::::::::::::::::::::::::
+       // IF
+
+        //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+       if (condition) {
+       /* le code si la condition est vraie*/ 
+                                                //:::::::::::::::::::::::::::::::::::::::::::::::
+
+
+       }
+       if (condition) {
+        
+       }
+       if (condition) {
+        
+       }
+       //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+       // if else
+       //----------------------------------------------------------------------------------------------------
+       if (condition) {
+        /* le code si la condition est vraie
+       */
+        
+       } else {
+        /* le code si la condition est false
+       */
+        
+       }
+       //--------------------------------------------------------------------------------------------------------
+       //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+       //if else if
+       if (condition) {
+        /* le code si la condition est vraie
+       */
+        
+       } else if {
+        /* le code si la condition est vraie
+       */
+        
+       }
+       else {
+        /* le code si la condition est false
+       */
+
+
+       }
+       //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+    </script>
+</body>
+</html>

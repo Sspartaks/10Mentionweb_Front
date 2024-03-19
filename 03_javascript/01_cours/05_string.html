@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //:::::::::::::::::::::::::::
+        // LES STRING ET CARACTERS
+        //:::::::::::::::::::::::::::
+        //nous pouvons initialiser une chaine de caracetre de plusieur façon
+        // avec des guellements simples
+        const PRENOM = 'Sahar';
+        //avec des guillement doubles
+        const NOM = "FERCHICHI"
+        // avec simple quoutes et backslash
+        const ADDRESE ='j\'habite à Saint-michel sur orge'
+        const AR="Je suis "+ PRENOM+" "+NOM+" "+ADDRESE+"<br>";
+        document.write(AR);
+        const PRENOM2 = "Marc",NOM2 = "ISAAC";
+        document.write("Je suis " + PRENOM2+ " " +NOM2+"<br>");
+        // avec les backquotes ('') (altgr+7)
+        let bienvenue = ` Bonjour vous etes les bienvenues  : ${PRENOM2} et ${PRENOM} `;
+        document.write(bienvenue+"<br>");
+        //::::::::::::::::::::::::::::::::
+        // le " = " au niveau des strings
+        //::::::::::::::::::::::::::::::::
+        let fruits = "pommes";
+        document.write(fruits + "<br>");
+        fruits +=" fraise ";
+        document.write(fruits);
+        fruits +="Mandue";
+        document.write(fruits);
+
+
+        // Contrairement au "-" d'affectation qui remplace la valeur de la variable , j'utilise ici +- qui va ajouter la nouvelle valeur à la valeur de la variable
+        //:::::::::::::::::::::::::::::
+        //Convertir un string vers number
+        //:::::::::::::::::::::::::::::::
+
+        document.write('<br>');
+        let unNombre = "24";
+        document.write(typeof(unNombre));
+        // pour convertir le string "25" en nombre 24
+        document.write('<br>');
+        unNombre = parseFloat(unNombre);
+        document.write(typeof(unNombre));
+
+        //::::::::::::::::::::::::::::::
+        // Convertir un number vers string
+        //::::::::::::::::::::::::::::::
+        unNombre = unNombre.tuString();
+        document.write(typeof(unNombre));
+
+
+
+        
+    </script>
+</body>
+</html>
